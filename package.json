@@ -1,0 +1,42 @@
+{
+  "name": "eslint-config-coveo",
+  "version": "0.0.1",
+  "description": "Coveo's shareable eslint config",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coveo/eslint-config-coveo.git"
+  },
+  "keywords": [
+    "coveo",
+    "code",
+    "quality",
+    "lint",
+    "eslint",
+    "validate",
+    "checker",
+    "check",
+    "enforce",
+    "verify",
+    "hint",
+    "style",
+    "code",
+    "style",
+    "linter",
+    "jshint",
+    "jscs",
+    "jslint"
+  ],
+  "author": "Coveo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/coveo/eslint-config-coveo/issues"
+  },
+  "homepage": "https://github.com/coveo/eslint-config-coveo#readme"
+}
