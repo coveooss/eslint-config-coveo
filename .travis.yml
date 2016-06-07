@@ -1,7 +1,22 @@
 language: node_js
+cache:
+  directories:
+  - node_modules
+notifications:
+  email:
+    on_succes: change
+    on_failure: always
 node_js:
-  - '6'
-  - '5'
-  - '4'
-  - '0.12'
-  - '0.10'
+- '6'
+- '5'
+- '4'
+- '0.12'
+- '0.10'
+deploy:
+  provider: npm
+  email: "sandbox_SF@coveo.com"
+  api_key:
+    secure: LXrfkJlaV4/8Kmi8CCqmtAAcEiFP69DLo20GfkgNloK86k+1X1UMUuXG5yD3cD1HI/dwxbCCRq3oLzQHT9cLHxXVbfL7JDCZa7HRdjoJQG4w7MCW/cPZv8i1MK6B/Lg5N7cDpbTMLccTOjcGVXnAE+NTaRpjBr+V8LP7ETM1IkFxkbVUiQxtgVrTjE5t1NCQx4USRyDSrV5kv4dN3J/jvPjAHakvf6jO/GvE2xXt+69801H5moDUTNDLd80GRukhNFDZylYu72K6Qnd9JMYUx0jgr9VBVQhL1hskqzXufwm1JqdPQyH7XQnZe20siwHLdX6bUl/fXx8HjsSsxJ503RVOJOsPEDNd0Qfod3PDJ8Npvyn/KtJ7igdQJSzeHBbfhNy0JK/9lCLwRpfFkm2naYJMqIAp9rQt0KmOZNxcLxlFUHFunvvxg5PuWV94prlOhKCD/gQ3RWs+V3c594o0bR2AhPimJaWfvu/4tVajoh4582FtOOPD+C5nucSaM8pU6rZZKmnGZhb0C4XuncdR5h8VKTfTB523fTA4f/x9b5FaxU9+2BbxwiuCEUO9t0I4VbdN9zhZkbJifB5JiiiiyM+uP/iZVx+7yYb0H3jZDXxLPsLm/duSi09/5x3ggO+Tb3WU5jeK8E6Bk2Nt9zEyBesfhWQTUdbNckEqhGt7Lpk=
+  on:
+    tags: true
+    repo: coveo/eslint-config-coveo
