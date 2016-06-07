@@ -58,7 +58,9 @@ module.exports = {
     'accessor-pairs': 2,
     'array-callback-return': 2,
     'block-scoped-var': 2,
-    'complexity': [2, 11],
+    'complexity': [2, {
+      max: 11
+    }],
     'consistent-return': 0,
     'curly': 2,
     'default-case': 2,
@@ -164,7 +166,9 @@ module.exports = {
     'func-names': 0,
     'func-style': 2,
     'id-blacklist': [2, 'error', 'cb'],
-    'id-length': [2, 2, 30, {
+    'id-length': [2, {
+      min: 2,
+      max: 30,
       properties: 'never'
     }],
     'id-match': [2, '^[a-z]+([A-Z][a-z]+)*$'],
@@ -174,7 +178,7 @@ module.exports = {
     'jsx-quotes': 0,
     'key-spacing': 2,
     'keyword-spacing': 2,
-    'linebreak-style': [2, 'unix']
+    'linebreak-style': [2, 'unix'],
     'lines-around-comment': [2, {
       beforeBlockComment: true,
       allowBlockStart: true,
@@ -182,14 +186,16 @@ module.exports = {
       allowArrayStart: true
     }],
     'max-depth': [2, 4],
-    'max-len': [2, 120, 2 {
+    'max-len': [2, 120, 2, {
       ignoreComments: true,
       ignoreUrls: true
     }],
     'max-nested-callbacks': [2, 5],
     'max-params': [2, 6],
     'max-statements': [2, 30],
-    'max-statements-per-line': [2, 1],
+    'max-statements-per-line': [2, {
+      max: 1
+    }],
     'new-cap': 0,
     'new-parens': 2,
     'newline-after-var': 2,
@@ -235,7 +241,7 @@ module.exports = {
     'space-unary-ops': 0,
     'spaced-comment': 2,
     'unicode-bom': 0,
-    'wrap-regex': 0
+    'wrap-regex': 0,
 
     // ECMAScript 6
     'arrow-body-style': 2,
@@ -243,30 +249,30 @@ module.exports = {
     'arrow-spacing': 0,
     'constructor-super': 0,
     'generator-star-spacing': 0,
-    'no-class-assign': 0
+    'no-class-assign': 0,
     'no-confusing-arrow': [2, {
       allowParens: true
     }],
-    'no-const-assign': 2
-    'no-dupe-class-members': 2
-    'no-duplicate-imports': 0
-    'no-new-symbol': 0
-    'no-restricted-imports': 0
-    'no-this-before-super': 0
-    'no-useless-computed-key': 2
-    'no-useless-constructor': 0
-    'no-useless-rename': 2
-    'no-var': 0
-    'object-shorthand': 0
-    'prefer-arrow-callback': 0
-    'prefer-const': 0
-    'prefer-reflect': 0
-    'prefer-rest-params': 0
-    'prefer-spread': 0
-    'prefer-template': 0
-    'require-yield': 0
-    'sort-imports': 0
-    'template-curly-spacing': 0
+    'no-const-assign': 2,
+    'no-dupe-class-members': 2,
+    'no-duplicate-imports': 0,
+    'no-new-symbol': 0,
+    'no-restricted-imports': 0,
+    'no-this-before-super': 0,
+    'no-useless-computed-key': 2,
+    'no-useless-constructor': 0,
+    'no-useless-rename': 2,
+    'no-var': 0,
+    'object-shorthand': 0,
+    'prefer-arrow-callback': 0,
+    'prefer-const': 0,
+    'prefer-reflect': 0,
+    'prefer-rest-params': 0,
+    'prefer-spread': 0,
+    'prefer-template': 0,
+    'require-yield': 0,
+    'sort-imports': 0,
+    'template-curly-spacing': 0,
     'yield-star-spacing': [2, 'before']
   }
 };
