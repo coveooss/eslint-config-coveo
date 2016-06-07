@@ -4,7 +4,7 @@ cache:
   - node_modules
 notifications:
   email:
-    on_succes: change
+    on_success: change
     on_failure: always
 node_js:
 - '6'
@@ -12,11 +12,14 @@ node_js:
 - '4'
 - '0.12'
 - '0.10'
+env:
+  global:
+    - COMMIT_AUTHOR_EMAIL: "sandbox_SF@coveo.com"
 deploy:
   provider: npm
   email: "sandbox_SF@coveo.com"
-  api_key:
-    secure: LXrfkJlaV4/8Kmi8CCqmtAAcEiFP69DLo20GfkgNloK86k+1X1UMUuXG5yD3cD1HI/dwxbCCRq3oLzQHT9cLHxXVbfL7JDCZa7HRdjoJQG4w7MCW/cPZv8i1MK6B/Lg5N7cDpbTMLccTOjcGVXnAE+NTaRpjBr+V8LP7ETM1IkFxkbVUiQxtgVrTjE5t1NCQx4USRyDSrV5kv4dN3J/jvPjAHakvf6jO/GvE2xXt+69801H5moDUTNDLd80GRukhNFDZylYu72K6Qnd9JMYUx0jgr9VBVQhL1hskqzXufwm1JqdPQyH7XQnZe20siwHLdX6bUl/fXx8HjsSsxJ503RVOJOsPEDNd0Qfod3PDJ8Npvyn/KtJ7igdQJSzeHBbfhNy0JK/9lCLwRpfFkm2naYJMqIAp9rQt0KmOZNxcLxlFUHFunvvxg5PuWV94prlOhKCD/gQ3RWs+V3c594o0bR2AhPimJaWfvu/4tVajoh4582FtOOPD+C5nucSaM8pU6rZZKmnGZhb0C4XuncdR5h8VKTfTB523fTA4f/x9b5FaxU9+2BbxwiuCEUO9t0I4VbdN9zhZkbJifB5JiiiiyM+uP/iZVx+7yYb0H3jZDXxLPsLm/duSi09/5x3ggO+Tb3WU5jeK8E6Bk2Nt9zEyBesfhWQTUdbNckEqhGt7Lpk=
   on:
     tags: true
     repo: coveo/eslint-config-coveo
+  api_key:
+    secure: Hl85iXmH69MuQ6CeRsGyQ1HJgyVGQoe4HHra4Nd6gPWeNLpvp/+P5yRSnDuwQblkLG0W17jaz82WyC8dzw9s4ogRYf2cSaO5gJLATU54mWCH9OVU3psDxtQj3KW5Y6PJ9Ud0fddl2iy+w46auE8cS/UCkSFJ7zdB1bFjL111v8WLcH4TZtPmCX8PGe/uHa2iPaqX7u50eu5U7Prvnqdoxrm28TCccUelGnKkKCwm5rX7b/LBNKlZza90kN4usn0E5cADkFklHCuEebFM6zEbPeCCy0MSu7vHZVcxtMdgyGx1MR0LyXpdjyyzOjOzne7Cm98d9E6ZJ1MhzhCcbgRil/yON/vVmqSsXxzbf5AHLRwMwUQpKufdyM0OptyJJG/YGPHTax2amT+HEYSLdNBCNrMWFD9m1XA6w7lanu3onCNo8XJ3e9KGSnwJQsrMbnqX5DKuwitJRjjB9SyMcWa5AC0vyaZ7b9XRdxyZ2JFJS5FWey4zQjKbiDYVi807/Xambp199NcG8kcKqHwV+6Kbh/xl0uTb3h1yKbhO8ngQGy1Pa5pPNiqa86qir1KNjd01p9oEHrwIyyC7/oO4DlTDRXROSZ5faYcoxCPhBUndW6ems4XN05SYGLM48gHVgz9zSKB44PN2D7BZwGBTX/i8Od8ddWOpvn8DjaaaPEQxc/M=
