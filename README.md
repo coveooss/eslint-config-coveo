@@ -10,6 +10,12 @@ Coveo's eslint shareable config
 
 ## Usage
 
+Download eslint-config-coveo with `npm`
+
+```sh
+  npm install --save-dev eslint-config-coveo
+```
+
 Extends Coveo's rules in your .eslintrc files
 
 In `YAML`
