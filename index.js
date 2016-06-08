@@ -19,9 +19,6 @@ module.exports = {
     browser: true,
     es6: true
   },
-  globals: {
-    Coveo: true,
-  },
   rules: {
     // Possible Errors
     'comma-dangle': 2,
@@ -59,7 +56,7 @@ module.exports = {
     'array-callback-return': 2,
     'block-scoped-var': 2,
     'complexity': [2, {
-      max: 11
+      max: 20
     }],
     'consistent-return': 0,
     'curly': 2,
@@ -258,7 +255,7 @@ module.exports = {
     'no-duplicate-imports': 0,
     'no-new-symbol': 0,
     'no-restricted-imports': 0,
-    'no-this-before-super': 0,
+    'no-this-before-super': 2,
     'no-useless-computed-key': 2,
     'no-useless-constructor': 0,
     'no-useless-rename': 2,
