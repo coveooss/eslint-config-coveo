@@ -13,7 +13,8 @@
  */
 module.exports = {
   parserOptions: {
-    ecmaVersion: 6
+    ecmaVersion: 6,
+    modules: true
   },
   env: {
     browser: true,
@@ -48,7 +49,19 @@ module.exports = {
     'no-unreachable': 2,
     'no-unsafe-finally': 2,
     'use-isnan': 2,
-    'valid-jsdoc': 2,
+    'valid-jsdoc': [2, {
+      prefer: {
+        arg: "param",
+        argument: "param",
+        class: "contructor",
+        virtual: "abstract"
+      },
+      requireReturn: false,
+      requireReturnType: true,
+      matchDescription: ".+",
+      requireParamDescription: true,
+      requireReturnDescription: false
+    }],
     'valid-typeof': 2,
 
     // Best Pratices
@@ -227,7 +240,13 @@ module.exports = {
     'padded-blocks': 0,
     'quote-props': 0,
     'quotes': [2, 'single'],
-    'require-jsdoc': 2,
+    'require-jsdoc': [2, {
+      require: {
+        FunctionDeclaration: true,
+        MethodDefinition: true,
+        ClassDeclaration: true
+      }
+    }],
     'semi': 2,
     'semi-spacing': 2,
     'sort-vars': 0,

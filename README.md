@@ -4,6 +4,7 @@ Coveo's eslint shareable config
 
 [![Build Status](https://travis-ci.org/coveo/eslint-config-coveo.svg?branch=master)](https://travis-ci.org/coveo/eslint-config-coveo)
 [![devDependency Status](https://david-dm.org/coveo/eslint-config-coveo/dev-status.svg)](https://david-dm.org/coveo/eslint-config-coveo#info=devDependencies)
+[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 [![GitHub release](https://img.shields.io/github/release/coveo/eslint-config-coveo.svg)](https://github.com/coveo/eslint-config-coveo/releases/)
 [![version](https://img.shields.io/npm/v/eslint-config-coveo.svg)](https://www.npmjs.org/package/eslint-config-coveo)
 [![npm](https://img.shields.io/npm/dt/eslint-config-coveo.svg)](https://www.npmjs.org/package/eslint-config-coveo)
