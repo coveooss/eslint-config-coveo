@@ -41,7 +41,7 @@
   },
   "homepage": "https://github.com/coveo/eslint-config-coveo#readme",
   "devDependencies": {
-    "ava": "^0.15.2",
+    "ava": "^0.16.0",
     "cz-conventional-changelog": "^1.1.6",
     "eslint": "^3.2.0",
     "is-plain-obj": "^1.1.0",
