@@ -25,13 +25,14 @@ function lint(str, conf) {
 /**
  * `Eslint` test
  */
-test('It should throw 4 errors', t => {
+test('It should throw 5 errors', t => {
   const errors = lint(`'use strict'\nvar foo = function () {};\nfoo();\n`, conf);
 
   t.is(errors[0].ruleId, 'semi');
   t.is(errors[1].ruleId, 'newline-after-var');
-  t.is(errors[2].ruleId, 'no-implicit-globals');
-  t.is(errors[3].ruleId, 'no-empty-function');
+  t.is(errors[2].ruleId, 'no-var');
+  t.is(errors[3].ruleId, 'no-implicit-globals');
+  t.is(errors[4].ruleId, 'no-empty-function');
 });
 
 /**
