@@ -284,7 +284,7 @@ module.exports = {
     'no-useless-computed-key': 2,
     'no-useless-constructor': 2,
     'no-useless-rename': 2,
-    'no-var': 0,
+    'no-var': 2,
     'object-shorthand': 2,
     'prefer-arrow-callback': 0,
     'prefer-const': 2,
