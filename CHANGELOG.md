@@ -1,3 +1,13 @@
+<a name="0.1.3"></a>
+## [0.1.3](https://github.com/coveo/eslint-config-coveo/compare/v0.1.2...v0.1.3) (2016-09-06)
+
+
+### Features
+
+* **rules:** add 2 rules to the configuration ([2390aec](https://github.com/coveo/eslint-config-coveo/commit/2390aec))
+
+
+
 <a name="0.1.2"></a>
 ## [0.1.2](https://github.com/coveo/eslint-config-coveo/compare/v0.1.0...v0.1.2) (2016-08-17)
 
