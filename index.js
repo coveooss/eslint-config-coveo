@@ -295,6 +295,8 @@ module.exports = {
     'require-yield': 0,
     'sort-imports': 0,
     'template-curly-spacing': 0,
-    'yield-star-spacing': [2, 'before']
+    'yield-star-spacing': [2, 'before'],
+    'class-method-use-this': 2,
+    'symbol-description': 2
   }
 };
