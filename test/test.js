@@ -1,10 +1,10 @@
 'use strict';
 
-import test from 'ava';
-import isPlainObj from 'is-plain-obj';
-import tempWrite from 'temp-write';
-import eslint from 'eslint';
-import conf from '../';
+var test = require('ava');
+var isPlainObj = require('is-plain-obj');
+var tempWrite = require('temp-write');
+var eslint = require('eslint');
+var conf = require('../');
 
 /**
  * lint - Lints code using `Eslint`
@@ -14,7 +14,7 @@ import conf from '../';
  * @return {Object[]}    Eslint errors
  */
 function lint(str, conf) {
-  const linter = new eslint.CLIEngine({
+  var linter = new eslint.CLIEngine({
     useEslintrc: false,
     configFile: tempWrite.sync(JSON.stringify(conf))
   });
@@ -25,20 +25,22 @@ function lint(str, conf) {
 /**
  * `Eslint` test
  */
-test('It should throw 5 errors', t => {
-  const errors = lint(`'use strict'\nvar foo = function () {};\nfoo();\n`, conf);
+test('It should throw 7 errors', function(t) {
+  var errors = lint("'use strict'\nvar foo = function () {};\nfoo();\n", conf);
 
-  t.is(errors[0].ruleId, 'semi');
-  t.is(errors[1].ruleId, 'newline-after-var');
-  t.is(errors[2].ruleId, 'no-var');
-  t.is(errors[3].ruleId, 'no-implicit-globals');
-  t.is(errors[4].ruleId, 'no-empty-function');
+  t.is(errors[0].ruleId, 'class-method-use-this');
+  t.is(errors[1].ruleId, 'symbol-description');
+  t.is(errors[2].ruleId, 'semi');
+  t.is(errors[3].ruleId, 'newline-after-var');
+  t.is(errors[4].ruleId, 'no-var');
+  t.is(errors[5].ruleId, 'no-implicit-globals');
+  t.is(errors[6].ruleId, 'no-empty-function');
 });
 
 /**
  * Testing if an object is a true plain object
  */
-test('It should be a javascript plain object', t => {
+test('It should be a javascript plain object', function(t) {
   t.true(isPlainObj(conf));
   t.true(isPlainObj(conf.rules));
 });
