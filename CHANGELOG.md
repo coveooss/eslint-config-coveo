@@ -1,3 +1,15 @@
+<a name="0.1.8"></a>
+## [0.1.8](https://github.com/coveo/eslint-config-coveo/compare/v0.1.7...v0.1.8) (2016-09-08)
+
+
+### Bug Fixes
+
+* **rule:** complexity ([a3dc724](https://github.com/coveo/eslint-config-coveo/commit/a3dc724))
+* **rule:** no-console wrong argument passed ([be3c2f5](https://github.com/coveo/eslint-config-coveo/commit/be3c2f5))
+* **rules:** remove no-mixed-requires ([3fcc12b](https://github.com/coveo/eslint-config-coveo/commit/3fcc12b))
+
+
+
 <a name="0.1.7"></a>
 ## [0.1.7](https://github.com/coveo/eslint-config-coveo/compare/v0.1.6...v0.1.7) (2016-09-08)
 
