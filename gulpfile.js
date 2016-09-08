@@ -44,7 +44,7 @@ gulp.task('bump-version', () => {
     .pipe(gulp.dest('./'));
 });
 
-gulp.task('commit-changelog', () => {
+gulp.task('commit-changes', () => {
   return gulp
     .src('.')
     .pipe(git.add())
@@ -71,7 +71,7 @@ gulp.task('create-new-tag', done => {
 gulp.task('release', done => {
   /* eslint no-console:"off" */
   runSequence(
-    'bump-version', 'changelog', 'commit-changelog', 'push-changes', 'create-new-tag', 'github-release', err => {
+    'bump-version', 'changelog', 'commit-changes', 'push-changes', 'create-new-tag', 'github-release', err => {
       if (err) {
         console.error(err.message);
       } else {
