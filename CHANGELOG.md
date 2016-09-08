@@ -1,3 +1,13 @@
+<a name="0.1.6"></a>
+## [0.1.6](https://github.com/coveo/eslint-config-coveo/compare/v0.1.5...v0.1.6) (2016-09-08)
+
+
+### Bug Fixes
+
+* **gulpfile:** fix task commit-changes ([356c2be](https://github.com/coveo/eslint-config-coveo/commit/356c2be))
+
+
+
 <a name="0.1.5"></a>
 ## [0.1.5](https://github.com/coveo/eslint-config-coveo/compare/v0.1.3...v0.1.5) (2016-09-08)
 
