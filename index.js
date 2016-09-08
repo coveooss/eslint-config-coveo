@@ -25,7 +25,9 @@ module.exports = {
     // Possible Errors
     'comma-dangle': 2,
     'no-cond-assign': 0,
-    'no-console': 2,
+    'no-console': [2, {
+      allow: ['warn', 'error'] 
+    }],
     'no-constant-condition': 0,
     'no-control-regex': 0,
     'no-debugger': 2,
