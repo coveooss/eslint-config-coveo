@@ -14,11 +14,12 @@
 module.exports = {
   parserOptions: {
     ecmaVersion: 6,
-    modules: true
+    sourceType: 'module'
   },
   env: {
     browser: true,
-    es6: true
+    es6: true,
+    node: true
   },
   rules: {
     // Possible Errors
@@ -51,14 +52,14 @@ module.exports = {
     'use-isnan': 2,
     'valid-jsdoc': [2, {
       prefer: {
-        arg: "param",
-        argument: "param",
-        class: "contructor",
-        virtual: "abstract"
+        arg: 'param',
+        argument: 'param',
+        class: 'contructor',
+        virtual: 'abstract'
       },
       requireReturn: false,
       requireReturnType: true,
-      matchDescription: ".+",
+      matchDescription: '.+',
       requireParamDescription: true,
       requireReturnDescription: false
     }],
@@ -296,7 +297,7 @@ module.exports = {
     'sort-imports': 0,
     'template-curly-spacing': 0,
     'yield-star-spacing': [2, 'before'],
-    'class-method-use-this': 2,
+    'class-methods-use-this': 2,
     'symbol-description': 2
   }
 };
