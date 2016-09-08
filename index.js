@@ -69,9 +69,7 @@ module.exports = {
     'accessor-pairs': 2,
     'array-callback-return': 2,
     'block-scoped-var': 2,
-    'complexity': [2, {
-      max: 20
-    }],
+    'complexity': [2, 20],
     'consistent-return': 0,
     'curly': 2,
     'default-case': 2,
