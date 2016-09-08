@@ -1,3 +1,13 @@
+<a name="0.1.7"></a>
+## [0.1.7](https://github.com/coveo/eslint-config-coveo/compare/v0.1.6...v0.1.7) (2016-09-08)
+
+
+### Bug Fixes
+
+* **travis:** fix build deployment ([dc7abe4](https://github.com/coveo/eslint-config-coveo/commit/dc7abe4))
+
+
+
 <a name="0.1.6"></a>
 ## [0.1.6](https://github.com/coveo/eslint-config-coveo/compare/v0.1.5...v0.1.6) (2016-09-08)
 
