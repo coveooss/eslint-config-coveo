@@ -1,3 +1,21 @@
+<a name="0.1.4"></a>
+## [0.1.4](https://github.com/coveo/eslint-config-coveo/compare/v0.1.3...v0.1.4) (2016-09-08)
+
+
+### Bug Fixes
+
+* **rules:** typo with a new rule ([2567f55](https://github.com/coveo/eslint-config-coveo/commit/2567f55))
+
+
+### BREAKING CHANGES
+
+* rules: the rule name has been fixed from
+BEFORE:
+`class-method-use-this`
+AFTER:`class-methods-use-this`
+
+
+
 <a name="0.1.3"></a>
 ## [0.1.3](https://github.com/coveo/eslint-config-coveo/compare/v0.1.2...v0.1.3) (2016-09-06)
 
@@ -66,6 +84,3 @@
 
 <a name="0.0.1"></a>
 ## 0.0.1 (2016-06-07)
-
-
-
