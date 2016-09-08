@@ -46,7 +46,7 @@ gulp.task('bump-version', () => {
 
 gulp.task('commit-changelog', () => {
   return gulp
-    .src('CHANGELOG.md')
+    .src('.')
     .pipe(git.add())
     .pipe(git.commit(`docs(CHANGELOG): [skip ci] bumping version to ${getPackageVersion()}`));
 });
