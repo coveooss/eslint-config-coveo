@@ -26,7 +26,7 @@ module.exports = {
     'comma-dangle': 2,
     'no-cond-assign': 0,
     'no-console': [2, {
-      allow: ['warn', 'error'] 
+      allow: ['warn', 'error']
     }],
     'no-constant-condition': 0,
     'no-control-regex': 0,
@@ -197,7 +197,8 @@ module.exports = {
     'max-depth': [2, 4],
     'max-len': [2, 120, 2, {
       ignoreComments: true,
-      ignoreUrls: true
+      ignoreUrls: true,
+      ignoreTrailingComments: true
     }],
     'max-nested-callbacks': [2, 5],
     'max-params': [2, 6],
@@ -296,6 +297,12 @@ module.exports = {
     'template-curly-spacing': 0,
     'yield-star-spacing': [2, 'before'],
     'class-methods-use-this': 2,
-    'symbol-description': 2
+    'symbol-description': 2,
+    'prefer-numeric-literals': 2,
+    'no-restricted-properties': 0,
+    'line-comment-position': [2, {
+      position: 'above'
+    }],
+    'lines-around-directive': [2, 'never']
   }
 };
