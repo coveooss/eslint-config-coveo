@@ -1,3 +1,30 @@
+<a name="0.1.9"></a>
+## [0.1.9](https://github.com/coveo/eslint-config-coveo/compare/v0.1.8...v0.1.9) (2016-09-13)
+
+
+### Bug Fixes
+
+* **test:** travis is failing because a rule is missing ([2a30182](https://github.com/coveo/eslint-config-coveo/commit/2a30182))
+* **travis:** build is failing because of a missing rule ([cb57c69](https://github.com/coveo/eslint-config-coveo/commit/cb57c69))
+* **travis:** missing rule... let's fix the build ([ac94229](https://github.com/coveo/eslint-config-coveo/commit/ac94229))
+* **travis:** rule missing ([14ae58e](https://github.com/coveo/eslint-config-coveo/commit/14ae58e))
+
+
+### Features
+
+* **rules:** eslint v.3.5.0 released with 4 new rules ([f5a509f](https://github.com/coveo/eslint-config-coveo/commit/f5a509f))
+
+
+### BREAKING CHANGES
+
+* rules: max-len rule ignores trailing comments now.
+BEFORE: 'max-len: [2, 120, 2, {
+ignoreComments: true, ignoreUrls: true }]'.
+AFTER: 'max-len: [2, 120, 2, { ignoreComments: true,
+ignoreUrls: true, ignoreTrailingComments: true  }]'
+
+
+
 <a name="0.1.8"></a>
 ## [0.1.8](https://github.com/coveo/eslint-config-coveo/compare/v0.1.7...v0.1.8) (2016-09-08)
 
