@@ -25,14 +25,15 @@ const lint = (str, configuration) => {
  */
 test('It should throw errors', assert => {
   const errors = lint(`'use strict'\nvar foo = function () {};\nfoo();\n`, conf);
-
-  assert.is(errors[0].ruleId, 'strict');
-  assert.is(errors[1].ruleId, 'class-methods-use-this');
-  assert.is(errors[2].ruleId, 'symbol-description');
-  assert.is(errors[3].ruleId, 'semi');
-  assert.is(errors[4].ruleId, 'newline-after-var');
-  assert.is(errors[5].ruleId, 'no-var');
-  assert.is(errors[6].ruleId, 'no-empty-function');
+  const rules = [
+    'strict', 'semi', 'newline-after-var', 'no-var', 'no-empty-function'
+  ];
+  errors.forEach(error => {
+    const id = rules.find(rule => {
+      return rule === error.ruleId;
+    });
+    assert.is(error.ruleId, id);
+  });
 });
 
 /**
