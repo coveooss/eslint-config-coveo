@@ -1,15 +1,22 @@
-<!--
-Thank you for submitting a pull request!
+**What kind of change does this PR introduce? (Bug fix, feature, docs update, ...)**
 
-Here's a checklist you might find useful.
-[ ] There is an associated issue that is labelled
-  'Bug' or 'Accepting PRs' or is in the Community milestone
-[ ] Code is up-to-date with the `master` branch
-[ ] You've successfully run `gulp test` locally
-[ ] There are new or updated unit tests validating the change
 
-Refer to CONTRIBUTING.MD for more details.
-  https://github.com/coveo/eslint-config-coveo/CONTRIBUTING.md
--->
 
-**Fixes issue:** #
+**What is the current behavior? (You can also link to an open issue here)**
+
+
+
+**What is the new behavior (if this is a feature change)?**
+
+
+
+**Does this PR introduce a breaking change?**
+
+
+
+**Please check if the PR fulfills these requirements**
+- [ ] The commit message follows our guidelines: https://github.com/coveo/eslint-config-coveo/blob/master/CONTRIBUTING.md#commit-message-format
+- [ ] Tests for the changes have been added (for bug fixes / features)
+- [ ] Docs have been added / updated (for bug fixes / features)
+
+**Other information**:
