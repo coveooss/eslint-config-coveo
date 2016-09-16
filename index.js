@@ -231,7 +231,7 @@ module.exports = {
     'no-underscore-dangle': 0,
     'no-unneeded-ternary': 2,
     'no-whitespace-before-property': 2,
-    'object-curly-spacing': 2,
+    'object-curly-spacing': [2, 'always'],
     'object-property-newline': 2,
     'one-var': 0,
     'one-var-declaration-per-line': 2,
@@ -260,7 +260,7 @@ module.exports = {
     'wrap-regex': 0,
 
     // ECMAScript 6
-    'arrow-body-style': [2, 'never'],
+    'arrow-body-style': [2, 'as-needed'],
     'arrow-parens': [2, 'as-needed'],
     'arrow-spacing': [2, {
       before: true,
