@@ -55,7 +55,7 @@ gulp.task('commit-changes', () =>
   gulp
     .src('.')
     .pipe(git.add())
-    .pipe(git.commit(`docs(CHANGELOG): bumping version to ${version()}`))
+    .pipe(git.commit(`docs(CHANGELOG): bumping version to ${version()} [skip ci]`))
 );
 
 gulp.task('push-changes', done =>
