@@ -10,7 +10,9 @@
     "test": "ava",
     "commit": "git add .; git cz; git push",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0",
-    "release": "gulp release"
+    "release-major": "gulp release --semver major",
+    "release-minor": "gulp release --semver minor",
+    "release-patch": "gulp release"
   },
   "repository": {
     "type": "git",
@@ -55,6 +57,7 @@
     "gulp-git": "^1.11.3",
     "gulp-util": "^3.0.7",
     "is-plain-obj": "^1.1.0",
+    "minimist": "^1.2.0",
     "run-sequence": "^1.2.2",
     "temp-write": "^2.1.0"
   },
