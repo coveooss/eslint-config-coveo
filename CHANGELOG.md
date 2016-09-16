@@ -1,3 +1,21 @@
+<a name="0.1.10"></a>
+## [0.1.10](https://github.com/coveo/eslint-config-coveo/compare/v0.1.9...v0.1.10) (2016-09-16)
+
+
+### Bug Fixes
+
+* **rule:** arrow-body-style ([a27c4dd](https://github.com/coveo/eslint-config-coveo/commit/a27c4dd))
+
+
+### BREAKING CHANGES
+
+* rule: correct declaration of a function:
+```let foo = () => 0;```
+```let foo = () => ({
+foo: 0 });```
+
+
+
 <a name="0.1.9"></a>
 ## [0.1.9](https://github.com/coveo/eslint-config-coveo/compare/v0.1.8...v0.1.9) (2016-09-13)
 
