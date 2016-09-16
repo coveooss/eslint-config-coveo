@@ -9,7 +9,7 @@ const runSequence = require('run-sequence');
 const minimist = require('minimist');
 // We parse the json file instead of using require because require caches
 // multiple calls so the version number won't be updated
-const version = (() => JSON.parse(fs.readFileSync('./package.json', 'utf-8')).version)();
+const version = () => JSON.parse(fs.readFileSync('./package.json', 'utf-8').version);
 const defaults = {
   string: 'semver',
   string: 'preset',
@@ -55,7 +55,7 @@ gulp.task('commit-changes', () =>
   gulp
     .src('.')
     .pipe(git.add())
-    .pipe(git.commit(`docs(CHANGELOG): bumping version to ${version}`))
+    .pipe(git.commit(`docs(CHANGELOG): bumping version to ${version()}`))
 );
 
 gulp.task('push-changes', done =>
@@ -63,7 +63,7 @@ gulp.task('push-changes', done =>
 );
 
 gulp.task('create-new-tag', done =>
-  git.tag(`v${version}`, `Created Tag for version: ${version}`, err => {
+  git.tag(`v${version()}`, `Created Tag for version: ${version()}`, err => {
     if (err) {
       return done(err);
     }
