@@ -1,3 +1,36 @@
+<a name="2.0.0"></a>
+# [2.0.0](https://github.com/coveo/eslint-config-coveo/compare/v0.1.10...v2.0.0) (2016-09-16)
+
+
+### Bug Fixes
+
+* **gulpfile:** fix release task ([f1b9561](https://github.com/coveo/eslint-config-coveo/commit/f1b9561))
+* **gulpfile:** fix release task ([1c088cf](https://github.com/coveo/eslint-config-coveo/commit/1c088cf))
+* **rules:** new params for `arrow-body-style` and `object-curly-spacing` ([544edbe](https://github.com/coveo/eslint-config-coveo/commit/544edbe))
+
+
+### Chores
+
+* **npm:** package.json new commands for release ([6a282e4](https://github.com/coveo/eslint-config-coveo/commit/6a282e4))
+
+
+### BREAKING CHANGES
+
+* rules: `object-curly-spacing`: objects require spaces when
+declared.
+
+`arrow-body-style`: no curly braces when needed
+* npm: 2 new commands were added in `package.json`:
+
+`npm run release-major`
+
+`npm
+run release-minor`
+
+`npm run release` became `npm run release-patch`
+
+
+
 <a name="1.0.0"></a>
 # [1.0.0](https://github.com/coveo/eslint-config-coveo/compare/v0.1.10...v1.0.0) (2016-09-16)
 
