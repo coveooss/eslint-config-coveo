@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-coveo",
-  "version": "2.0.0",
+  "version": "0.10.1",
   "description": "Coveo's shareable eslint config",
   "main": "index.js",
   "directories": {
