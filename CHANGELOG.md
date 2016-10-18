@@ -1,3 +1,26 @@
+<a name="1.1.0"></a>
+# [1.1.0](https://github.com/coveo/eslint-config-coveo/compare/v1.0.2...v1.1.0) (2016-10-18)
+
+
+### Bug Fixes
+
+* **rules:** deprecated rules ([edccb09](https://github.com/coveo/eslint-config-coveo/commit/edccb09))
+
+
+### Features
+
+* **rule: func-name-matching:** add a new supported rule: `func-name-matching` by eslint ([3b544c6](https://github.com/coveo/eslint-config-coveo/commit/3b544c6))
+
+
+### BREAKING CHANGES
+
+* rules: no-native-reassign became no-global-assign.
+no-negated-in-lhs became
+no-unsafe-negation.
+no-spaced-func became func-call-spacing
+
+
+
 <a name="1.0.2"></a>
 ## [1.0.2](https://github.com/coveo/eslint-config-coveo/compare/v1.0.1...v1.0.2) (2016-09-16)
 
