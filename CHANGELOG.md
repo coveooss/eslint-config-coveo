@@ -1,3 +1,13 @@
+<a name="1.1.1"></a>
+## [1.1.1](https://github.com/coveo/eslint-config-coveo/compare/v1.1.0...v1.1.1) (2016-10-18)
+
+
+### Bug Fixes
+
+* **rule:** object-curcly-spacing ([d3b12f5](https://github.com/coveo/eslint-config-coveo/commit/d3b12f5))
+
+
+
 <a name="1.1.0"></a>
 # [1.1.0](https://github.com/coveo/eslint-config-coveo/compare/v1.0.2...v1.1.0) (2016-10-18)
 
