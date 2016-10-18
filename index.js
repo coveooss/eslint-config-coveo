@@ -303,6 +303,7 @@ module.exports = {
     'line-comment-position': [2, {
       position: 'above'
     }],
-    'lines-around-directive': [2, 'never']
+    'lines-around-directive': [2, 'never'],
+    'func-name-matching': 2
   }
 };
