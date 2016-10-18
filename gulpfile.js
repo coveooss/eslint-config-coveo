@@ -9,15 +9,12 @@ const runSequence = require('run-sequence');
 const minimist = require('minimist');
 // We parse the json file instead of using require because require caches
 // multiple calls so the version number won't be updated
-const version = () => JSON.parse(fs.readFileSync('./package.json', 'utf8')).version
+const version = () => JSON.parse(fs.readFileSync('./package.json', 'utf8')).version;
 const defaults = {
-  string: 'semver',
-  string: 'preset',
-  string: 'token',
   default: {
     semver: process.env.SEMVER || 'patch' ,
     preset: process.env.PRESET || 'angular',
-    token:  process.env.CONVENTIONAL_GITHUB_RELEASER_TOKEN || ''
+    token: process.env.CONVENTIONAL_GITHUB_RELEASER_TOKEN || ''
   }
 };
 const options = minimist(process.argv.slice(2), defaults);
