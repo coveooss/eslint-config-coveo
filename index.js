@@ -43,7 +43,6 @@ module.exports = {
     'no-inner-declarations': 0,
     'no-invalid-regexp': 0,
     'no-irregular-whitespace': 2,
-    'no-negated-in-lhs': 0,
     'no-obj-calls': 2,
     'no-prototype-builtins': 2,
     'no-regex-spaces': 0,
@@ -66,6 +65,7 @@ module.exports = {
       requireReturnDescription: false
     }],
     'valid-typeof': 2,
+    'no-unsafe-negation': 2,
 
     // Best Pratices
     'accessor-pairs': 2,
@@ -104,7 +104,7 @@ module.exports = {
     'no-magic-numbers': 0,
     'no-multi-spaces': 2,
     'no-multi-str': 0,
-    'no-native-reassign': 2,
+    'no-global-assign': 2,
     'no-new': 0,
     'no-new-func': 2,
     'no-new-wrappers': 2,
@@ -225,7 +225,7 @@ module.exports = {
     'no-new-object': 2,
     'no-plusplus': 0,
     'no-restricted-syntax': [2, 'WithStatement'],
-    'no-spaced-func': 2,
+    'func-call-spacing': 2,
     'no-ternary': 0,
     'no-trailing-spaces': 2,
     'no-underscore-dangle': 0,
