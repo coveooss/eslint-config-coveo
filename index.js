@@ -231,7 +231,7 @@ module.exports = {
     'no-underscore-dangle': 0,
     'no-unneeded-ternary': 2,
     'no-whitespace-before-property': 2,
-    'object-curly-spacing': [2, 'always'],
+    'object-curly-spacing': [2, 'always', { 'objectsInObjects': false }],
     'object-property-newline': 2,
     'one-var': 0,
     'one-var-declaration-per-line': 2,
