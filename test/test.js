@@ -27,7 +27,7 @@ test('It should throw errors', assert => {
   const errors = lint(`'use strict'\nvar foo = function () {};\nfoo();\n`, conf);
   const rules = [
     'strict', 'semi', 'newline-after-var', 'no-var', 'no-empty-function', 'class-methods-use-this',
-    'symbol-description', 'prefer-numeric-literals', 'line-comment-position', 'lines-around-directive'
+    'symbol-description', 'prefer-numeric-literals', 'line-comment-position', 'lines-around-directive', 'no-useless-return'
   ];
 
   errors.forEach(err => {
