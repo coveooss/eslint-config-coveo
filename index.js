@@ -258,6 +258,7 @@ module.exports = {
     'spaced-comment': 2,
     'unicode-bom': 0,
     'wrap-regex': 0,
+    'no-useless-return': 2,
 
     // ECMAScript 6
     'arrow-body-style': [2, 'as-needed'],
