@@ -70,7 +70,7 @@ The commit message formatting can be added using a typical git workflow or throu
 Each commit message consists of a **header**, a **body** and a **footer**.  The header has a special
 format that includes a **type**, a **scope** and a **subject**:
 
-```
+```sh
 <type>(<scope>): <subject>
 <BLANK LINE>
 <body>
