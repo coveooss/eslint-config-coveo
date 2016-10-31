@@ -1,3 +1,13 @@
+<a name="1.2.0"></a>
+# [1.2.0](https://github.com/coveo/eslint-config-coveo/compare/v1.1.1...v1.2.0) (2016-10-31)
+
+
+### Features
+
+* **rule:** no-useless-return to support eslint 3.9.0 api ([848425c](https://github.com/coveo/eslint-config-coveo/commit/848425c))
+
+
+
 <a name="1.1.1"></a>
 ## [1.1.1](https://github.com/coveo/eslint-config-coveo/compare/v1.1.0...v1.1.1) (2016-10-18)
 
