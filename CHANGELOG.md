@@ -1,3 +1,18 @@
+<a name="1.2.1"></a>
+## [1.2.1](https://github.com/coveo/eslint-config-coveo/compare/v1.2.0...v1.2.1) (2016-11-04)
+
+
+### Features
+
+* **rules:** consistent-this option ([404e704](https://github.com/coveo/eslint-config-coveo/commit/404e704))
+
+
+### BREAKING CHANGES
+
+* rules: `consistent-this` rule now has the `self` option OOTB
+
+
+
 <a name="1.2.0"></a>
 # [1.2.0](https://github.com/coveo/eslint-config-coveo/compare/v1.1.1...v1.2.0) (2016-10-31)
 
