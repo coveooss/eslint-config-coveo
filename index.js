@@ -259,6 +259,7 @@ module.exports = {
     'unicode-bom': 0,
     'wrap-regex': 0,
     'no-useless-return': 2,
+    'capitalized-comments': 0,
 
     // ECMAScript 6
     'arrow-body-style': [2, 'as-needed'],
@@ -305,6 +306,9 @@ module.exports = {
       position: 'above'
     }],
     'lines-around-directive': [2, 'never'],
-    'func-name-matching': 2
+    'func-name-matching': 2,
+    'require-await': 0,
+    'no-return-await': 2,
+    'no-await-in-loop': 2
   }
 };
